@@ -1,0 +1,40 @@
+ body {
+      margin: 0;
+    }
+    .topNavBar{
+      background-color: #800020;
+      overflow: hidden;
+      margin-left: 0px;
+    }
+    .topNavBar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 15px 35px;
+      text-decoration: none;
+    }
+    .topNavBar b {
+      float: right;
+      color: white;
+      text-align: center;
+      padding: 15px 35px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .topNavBar a:hover{
+      background-color: #4a0113;
+    }
+    .topNavBar b:hover{
+      background-color: #4a0113;
+    }
+    .topNavBar a.current {
+      background-color: #04AA6D;
+      color: white;
+    } 
+    
+    .search{
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-right: -20px;
+    }
+
