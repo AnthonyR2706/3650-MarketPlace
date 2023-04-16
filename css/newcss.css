@@ -1,79 +1,83 @@
- body {
-      margin: 0;
-    }
-    .topNavBar{
-      background-color: #800020;
-      overflow: hidden;
-      margin-left: 0px;
-    }
-    .topNavBar a {
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 15px 35px;
-      text-decoration: none;
-    }
-    .topNavBar b {
-      float: right;
-      color: white;
-      text-align: center;
-      padding: 15px 35px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .topNavBar a:hover{
-      background-color: #4a0113;
-    }
-    .topNavBar b:hover{
-      background-color: #4a0113;
-    }
-    .topNavBar a.current {
-      background-color: #04AA6D;
-      color: white;
-    } 
-    
-    .search{
-      margin-top: 15px;
-      margin-left: 10px;
-      margin-right: -20px;
-    }
+body {
+  margin: 0;
+}
+.topNavBar{
+  background-color: #800020;
+  overflow: hidden;
+  margin-left: 0px;
+}
+.topNavBar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+.topNavBar b {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 15px 35px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.topNavBar a:hover{
+  background-color: #4a0113;
+}
+.topNavBar b:hover{
+  background-color: #4a0113;
+}
+.topNavBar a.current {
+  background-color: #04AA6D;
+  color: white;
+} 
 
-   .container{
-    display: flex;
-    min-height: 100vh;
-    margin-top: 5rem;
-   }
+.search{
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: -20px;
+}
 
-   #filter{
-    display: block;
-    float: left;
-    width: 15%;
-    border: solid 1px rgba(255, 0, 0, 0.1);
-    background-color: rgba(255, 0, 0, 0.1);
-   }
+.container{
+display: flex;
+min-height: 100vh;
+margin-top: 5rem;
+}
 
-   #content{ 
-    display: block;
-    width: 100%;
-    margin-left: 10rem;
-   }
+#filter{
+display: block;
+float: left;
+width: 15%;
+border: solid 1px rgba(255, 0, 0, 0.1);
+background-color: rgba(255, 0, 0, 0.1);
+}
 
-  .item_pic{
-    float:left;
-    height: 200px;
-    width: 200px;
-    margin-right: 5rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-  .item{
-    display: flex;
-    border-bottom: solid 2px black;
-  }
-  .description{
-    display: block;
-    align-content: center;
-    justify-content: center;
-    height: 200px;
-    width: 100%;
-  }
+#content{ 
+display: block;
+width: 100%;
+margin-left: 10rem;
+}
+
+.item_pic{
+float:left;
+height: 200px;
+width: 200px;
+margin-right: 5rem;
+margin-bottom: 3rem;
+margin-top: 3rem;
+}
+.item{
+display: flex;
+border-bottom: solid 2px black;
+}
+.description{
+display: block;
+align-content: center;
+justify-content: center;
+height: 200px;
+width: 100%;
+padding-left: 15px;
+margin-top: 50px;
+margin-right: 50px;
+background-color: #dbdbdb;
+}
