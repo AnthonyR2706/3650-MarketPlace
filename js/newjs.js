@@ -92,6 +92,56 @@ document.getElementById('createListing').onclick = function() {
     console.log(navBarElements[cur]);
   }
 }
+
+const sideNavBarElements = document.getElementsByClassName("sideNavBar");
+let curAccount = 0;
+const infoPages = document.getElementsByClassName("infoPage");
+document.getElementById('accountSettings').onclick = function() {
+  if(curAccount != 0){
+    this.classList.toggle('current');       sideNavBarElements[curAccount].classList.toggle('current');
+    infoPages[curAccount].style.display = 'none';
+    curAccount = 0;
+    infoPages[curAccount].style.display = '';
+    console.log(sideNavBarElements[curAccount]);
+  }
+}
+document.getElementById('yourListings').onclick = function() {
+  if(curAccount != 1){
+    this.classList.toggle('current');       sideNavBarElements[curAccount].classList.toggle('current');
+    infoPages[curAccount].style.display = 'none';
+    curAccount = 1;
+    infoPages[curAccount].style.display = '';
+    console.log(sideNavBarElements[curAccount]);
+  }
+}
+document.getElementById('wishlist').onclick = function() {
+  if(curAccount != 2){
+    this.classList.toggle('current');       sideNavBarElements[curAccount].classList.toggle('current');
+    infoPages[curAccount].style.display = 'none';
+    curAccount = 2;
+    infoPages[curAccount].style.display = '';
+    console.log(sideNavBarElements[curAccount]);
+  }
+}
+document.getElementById('inbox').onclick = function() {
+  if(curAccount != 3){
+    this.classList.toggle('current');       sideNavBarElements[curAccount].classList.toggle('current');
+    infoPages[curAccount].style.display = 'none';
+    curAccount = 3;
+    infoPages[curAccount].style.display = '';
+    console.log(sideNavBarElements[curAccount]);
+  }
+}
+document.getElementById('changeButton1').onclick = function(){
+  alert("You have been sent an email allowing you to change your username");
+}
+document.getElementById('changeButton2').onclick = function(){
+  alert("You have been sent an email allowing you to change your password");
+}
+document.getElementById('changeButton3').onclick = function(){
+  alert("You have been sent an email allowing you to change your email");
+}
+
 let loggedIn = false;
 document.getElementById('logIn').onclick = function(){
   pages[cur].style.display = 'none';

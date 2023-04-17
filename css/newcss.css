@@ -81,6 +81,50 @@ margin-top: 50px;
 margin-right: 50px;
 background-color: #dbdbdb;
 }
+
+.myInfo{
+display: flex;
+min-height: 100vh;
+margin-top: 5rem;
+}
+
+.infoPage{
+display: block;
+align-content: center;
+justify-content: center;
+height: 600px;
+width: 100%;
+padding-left: 15px;
+margin-top: 0;
+margin-right: 5%;
+margin-left: 5%;
+background-color: #dbdbdb;
+}
+.sideNav{
+display: block;
+float: right;
+clear: right;
+width: 20%;
+background-color: #800020;
+overflow: hidden;
+margin-left: 0;
+}
+.sideNav a{
+float: left;
+color: white;
+text-align: left;
+padding: 15px 35px;  
+text-decoration: none;
+width: 100%;
+}
+.sideNav a:hover{
+background-color: #4a0113;
+}
+
+.sideNav a.current {
+background-color: #04AA6D;
+color: white;
+} 
 .email, .password{
 width: 100%;
 padding-top: 15px;
@@ -120,4 +164,10 @@ background-color: #f44336;
 float: left;
 margin: 1%;
 width: 48%;
+}
+
+.changeButton{
+width: 100px;
+margin-bottom: 5%;
+margin-left: 5%;
 }
