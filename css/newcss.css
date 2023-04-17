@@ -1,3 +1,6 @@
+:root{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 body {
   margin: 0;
 }
@@ -120,4 +123,29 @@ background-color: #f44336;
 float: left;
 margin: 1%;
 width: 48%;
+}
+
+.options{
+  background-color: rgba(74, 1, 19,0.3);
+  flex: 1 1 0;
+  max-width: 200px;
+  
+}
+
+.option{
+  display:block;
+  padding: 2rem 1rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+.option:hover{
+  background-color: rgba(74, 1, 19,0.7);
+  font-weight: bold;
+}
+
+.active{
+  background-color: rgba(74, 1, 19,0.7);
+  font-weight: bold;
+
 }
