@@ -1,4 +1,3 @@
-import _ from "https://cdn.skypack.dev/lodash@4.17.21";
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 var allItems = Array.from(document.querySelectorAll('.item'));
 var checked = {};
