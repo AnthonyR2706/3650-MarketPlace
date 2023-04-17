@@ -1,4 +1,4 @@
-createlisting<html>
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +12,8 @@ createlisting<html>
     <a class = "navBar" href = "#" onClick = "javascript:changePage()" id = "myInfo">My Info</a>
     <a class = "navBar" href = "#" onClick = "javascript:changePage()" id = "createListing">Create Listing</a>
     <input class = "search" type = "text" id = "input">
-    <i class = "search"></i>
-    <b id = "logIn">Log In</b>
+    <b class = "navBar logInButton" id = "logIn">Log In</b>
+    <b class = "navBar logOutButton" id = "logOut">Log Out</b>
   </div>
   <div class = "home page">
     <div id="filter">
@@ -54,6 +54,37 @@ createlisting<html>
   </div>
   <div class = "createlisting page">
     
+  </div>
+  <div class = "login page">
+    <div class = "signIn">
+      <center> Sign In </center>
+      <input class = "email" type = "text" id = "input" placeholder="Email">
+      <input class = "password" type = "password" id = "input" placeholder="Password">
+      <center >
+      <div class="optionButtons">
+        <button type="button" class="cancelButton" id = "cancel">Cancel</button>
+        <button type="button" class="signUpButton" id = "signIn">Sign In</button>
+      </div>
+      <a class = "haveAccount" href = "#" id = "haveAccount">Don't have an account? Sign up</a>
+        <br>
+      <a class = "forgotPassword" href = "#" onClick = "javascript:forgotPassword()" id = "forgotPassword">Forgot Password</a>
+      </center>
+    </div>
+  </div>
+  <div class = "signUpPage page">
+    <div class = "signUp">
+      <center> Sign Up </center>
+      <input class = "email" type = "text" id = "input" placeholder="Email">
+      <input class = "password" type = "password" id = "input" placeholder="Password">
+      <input class = "password" type = "password" id = "input" placeholder="Confirm Password">
+      <center>
+      <div class="optionButtons">
+        <button type="button" class="cancelButton" id = "cancel2">Cancel</button>
+        <button type="button" class="signUpButton" id = "signIn2">Sign Up</button>
+      </div>
+      <a class = "signUp" href = "#" id = "signInButton">Already have an account? Sign in</a>
+      </center>
+    </div>
   </div>
 </body>
 </html>

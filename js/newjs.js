@@ -3,6 +3,14 @@ var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 var allItems = Array.from(document.querySelectorAll('.item'));
 var checked = {};
 
+window.onload = turnOff;
+
+function turnOff(){
+  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
+  document.getElementsByClassName('login')[0].style.display = 'none';
+  document.getElementById('logOut').style.display = 'none';
+}
+
 getChecked('textbooks');
 getChecked('electronics');
 
@@ -39,8 +47,10 @@ let cur = 0;
 const pages = document.getElementsByClassName("page");
 
 function changePage(){
-  console.log("test");
-  
+  console.log("test");  
+}
+function loginPage(){
+  console.log("test");  
 }
 document.getElementById('home').onclick = function() {
   if(cur != 0){
@@ -81,4 +91,57 @@ document.getElementById('createListing').onclick = function() {
     pages[cur].style.display = '';
     console.log(navBarElements[cur]);
   }
+}
+let loggedIn = false;
+document.getElementById('logIn').onclick = function(){
+  pages[cur].style.display = 'none';
+  document.getElementsByClassName('topNavBar')[0].style.display = 'none';
+  document.getElementsByClassName('login')[0].style.display = '';
+}
+document.getElementById('signIn').onclick = function() {
+  loggedIn = true;
+  pages[cur].style.display = '';
+  document.getElementsByClassName('topNavBar')[0].style.display = '';
+  document.getElementsByClassName('login page')[0].style.display = 'none';
+  document.getElementById('logOut').style.display = '';
+  document.getElementById('logIn').style.display = 'none';
+}
+document.getElementById('cancel').onclick = function() {
+  pages[cur].style.display = '';
+  document.getElementsByClassName('topNavBar')[0].style.display = '';
+  document.getElementsByClassName('login')[0].style.display = 'none';
+}
+
+document.getElementById('haveAccount').onclick = function(){
+  document.getElementsByClassName('login')[0].style.display = 'none';
+  document.getElementsByClassName('signUpPage')[0].style.display = '';
+}
+
+document.getElementById('forgotPassword').onclick = function(){
+  alert("Recovery email sent");
+}
+
+document.getElementById('signInButton').onclick = function(){
+  document.getElementsByClassName('login')[0].style.display = '';
+  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
+}
+
+document.getElementById('logOut').onclick = function(){
+  loggedIn = true;
+  document.getElementById('logOut').style.display = 'none';
+  document.getElementById('logIn').style.display = '';
+}
+
+document.getElementById('signIn2').onclick = function() {
+  loggedIn = true;
+  pages[cur].style.display = '';
+  document.getElementsByClassName('topNavBar')[0].style.display = '';
+  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
+  document.getElementById('logOut').style.display = '';
+  document.getElementById('logIn').style.display = 'none';
+}
+document.getElementById('cancel2').onclick = function() {
+  pages[cur].style.display = '';
+  document.getElementsByClassName('topNavBar')[0].style.display = '';
+  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
 }
