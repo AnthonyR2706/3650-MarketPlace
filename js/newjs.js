@@ -1,3 +1,4 @@
+import _ from "https://cdn.skypack.dev/lodash@4.17.21";
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 var allItems = Array.from(document.querySelectorAll('.item'));
 var checked = {};
@@ -35,31 +36,49 @@ function setVisibility() {
 const navBarElements = document.getElementsByClassName("navBar");
 let cur = 0;
 
+const pages = document.getElementsByClassName("page");
+
 function changePage(){
   console.log("test");
   
 }
 document.getElementById('home').onclick = function() {
-   this.classList.toggle('current');
-   navBarElements[cur].classList.toggle('current');
-   cur = 0;
-   console.log(navBarElements[cur]);
+  if(cur != 0){
+    this.classList.toggle('current');
+    navBarElements[cur].classList.toggle('current');
+    pages[cur].style.display = 'none';
+    cur = 0;
+    pages[cur].style.display = '';
+    console.log(navBarElements[cur]);
+  }
 }
 document.getElementById('categories').onclick = function() {
-  this.classList.toggle('current');
-  navBarElements[cur].classList.toggle('current');
-  cur = 1;
-  console.log(navBarElements[cur]);
+  if(cur != 1){
+    this.classList.toggle('current');
+    navBarElements[cur].classList.toggle('current');
+    pages[cur].style.display = 'none';
+    cur = 1;
+    pages[cur].style.display = '';
+    console.log(navBarElements[cur]);
+  }
 }
 document.getElementById('myInfo').onclick = function() {
-  this.classList.toggle('current');
-  navBarElements[cur].classList.toggle('current');
-  cur = 2;
-  console.log(navBarElements[cur]);
+  if(cur != 2){
+    this.classList.toggle('current');
+    navBarElements[cur].classList.toggle('current');
+    pages[cur].style.display = 'none';
+    cur = 2;
+    pages[cur].style.display = '';
+    console.log(navBarElements[cur]);
+  }
 }
 document.getElementById('createListing').onclick = function() {
-  this.classList.toggle('current');
-  navBarElements[cur].classList.toggle('current');
-  cur = 3;
-  console.log(navBarElements[cur]);
+  if(cur != 3){
+    this.classList.toggle('current');
+    navBarElements[cur].classList.toggle('current');
+    pages[cur].style.display = 'none';
+    cur = 3;
+    pages[cur].style.display = '';
+    console.log(navBarElements[cur]);
+  }
 }
