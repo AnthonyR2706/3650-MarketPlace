@@ -5,12 +5,6 @@ var checked = {};
 
 window.onload = turnOff;
 
-function turnOff(){
-  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
-  document.getElementsByClassName('login')[0].style.display = 'none';
-  document.getElementById('logOut').style.display = 'none';
-}
-
 getChecked('textbooks');
 getChecked('electronics');
 
@@ -194,4 +188,16 @@ document.getElementById('cancel2').onclick = function() {
   pages[cur].style.display = '';
   document.getElementsByClassName('topNavBar')[0].style.display = '';
   document.getElementsByClassName('signUpPage')[0].style.display = 'none';
+}
+
+function turnOff(){
+  document.getElementsByClassName('signUpPage')[0].style.display = 'none';
+  document.getElementsByClassName('login')[0].style.display = 'none';
+  document.getElementById('logOut').style.display = 'none';
+  pages[1].style.display = 'none';
+  pages[2].style.display = 'none';
+  pages[3].style.display = 'none';
+  infoPages[1].style.display = 'none';
+  infoPages[2].style.display = 'none';
+  infoPages[3].style.display = 'none';
 }
