@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) {
 var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 var allItems = Array.from(document.querySelectorAll('.item'));
 var checked = {};
@@ -137,6 +138,7 @@ document.getElementById('changeButton3').onclick = function(){
 
 let loggedIn = false;
 document.getElementById('logIn').onclick = function(){
+  console.log("login Button");
   pages[cur].style.display = 'none';
   document.getElementsByClassName('topNavBar')[0].style.display = 'none';
   document.getElementsByClassName('login')[0].style.display = '';
@@ -216,3 +218,4 @@ function newMessage() {
         document.getElementById("input").value = "";
       }
       var list = document.querySelector('ul');
+})
