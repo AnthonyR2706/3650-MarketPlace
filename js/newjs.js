@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('logOut').style.display = 'none';
     pages[1].style.display = 'none';
     pages[2].style.display = 'none';
-    pages[3].style.display = 'none';
+    pages[5].style.display = 'none';
     infoPages[1].style.display = 'none';
     infoPages[2].style.display = 'none';
     infoPages[3].style.display = 'none';
