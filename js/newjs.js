@@ -218,3 +218,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         var list = document.querySelector('ul');
   })
+function validateForm() {
+    var itemName = document.getElementById("NameofItem").value;
+    var listingPrice = document.getElementById("listingPrice").value;
+    var listingDescription = document.getElementById("listingDescription").value;
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    if (itemName === "" || listingPrice === "" || listingDescription === "" || checkboxes.length === 0) {
+        alert("Please fill out all the information and check at least one box.");
+        return false;
+    }
+    return true;
+}
