@@ -204,3 +204,20 @@ margin-top: 10px;
 margin-right: 15px;
 padding: 10px;
 }
+#createListingForm input[type="text"],
+#createListingForm textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 100%; 
+}
+
+#createListingForm input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
