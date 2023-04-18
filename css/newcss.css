@@ -1,11 +1,17 @@
+:root {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
   margin: 0;
 }
-.topNavBar{
+
+.topNavBar {
   background-color: #800020;
   overflow: hidden;
   margin-left: 0px;
 }
+
 .topNavBar a {
   float: left;
   color: white;
@@ -13,6 +19,7 @@ body {
   padding: 15px 35px;
   text-decoration: none;
 }
+
 .topNavBar b {
   float: right;
   color: white;
@@ -21,216 +28,332 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.topNavBar a:hover{
+
+.topNavBar a:hover {
   background-color: #4a0113;
 }
-.topNavBar b:hover{
+
+.topNavBar b:hover {
   background-color: #4a0113;
 }
+
 .topNavBar a.current {
   background-color: #04AA6D;
   color: white;
-} 
+}
 
-.search{
+.search {
   margin-top: 15px;
   margin-left: 10px;
   margin-right: -20px;
 }
 
-.home{
-display: flex;
-min-height: 100vh;
-margin-top: 5rem;
+.home {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 5rem;
 }
 
-#filter{
-display: block;
-float: left;
-width: 15%;
-border: solid 1px rgba(255, 0, 0, 0.1);
-background-color: rgba(255, 0, 0, 0.1);
+#filter {
+  display: block;
+  float: left;
+  width: 15%;
+  border: solid 1px rgba(255, 0, 0, 0.1);
+  background-color: rgba(255, 0, 0, 0.1);
 }
 
-#content{ 
-display: block;
-width: 100%;
-margin-left: 10rem;
+#content {
+  display: block;
+  width: 100%;
+  margin-left: 10rem;
 }
 
-.item_pic{
-float:left;
-height: 200px;
-width: 200px;
-margin-right: 5rem;
-margin-bottom: 3rem;
-margin-top: 3rem;
-}
-.item{
-display: flex;
-border-bottom: solid 2px black;
-}
-.description{
-display: block;
-align-content: center;
-justify-content: center;
-height: 200px;
-width: 100%;
-padding-left: 15px;
-margin-top: 50px;
-margin-right: 50px;
-background-color: #dbdbdb;
+.item_pic {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
-.myInfo{
-display: flex;
-min-height: 100vh;
-margin-top: 5rem;
+.item {
+  display: flex;
+  border-bottom: solid 2px black;
 }
 
-.infoPage{
-display: block;
-align-content: center;
-justify-content: center;
-height: 600px;
-width: 100%;
-padding-left: 15px;
-margin-top: 0;
-margin-right: 5%;
-margin-left: 5%;
-background-color: #dbdbdb;
+.description {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 50px;
+  margin-right: 50px;
+  background-color: #dbdbdb;
 }
-.sideNav{
-display: block;
-float: right;
-clear: right;
-width: 20%;
-background-color: #800020;
-overflow: hidden;
-margin-left: 0;
+
+.myInfo {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 5rem;
 }
-.sideNav a{
-float: left;
-color: white;
-text-align: left;
-padding: 15px 35px;  
-text-decoration: none;
-width: 100%;
+
+.infoPage {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 0;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: #dbdbdb;
 }
-.sideNav a:hover{
-background-color: #4a0113;
+
+.sideNav {
+  display: block;
+  float: right;
+  clear: right;
+  width: 20%;
+  background-color: #800020;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.sideNav a {
+  float: left;
+  color: white;
+  text-align: left;
+  padding: 15px 35px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sideNav a:hover {
+  background-color: #4a0113;
 }
 
 .sideNav a.current {
-background-color: #04AA6D;
-color: white;
-} 
-.email, .password{
-width: 100%;
-padding-top: 15px;
-padding-bottom: 15px;
-margin: 5px 0px 22px 0px;
-display: inline-block;
-border: none;
-background: #f1f1f1;
+  background-color: #04AA6D;
+  color: white;
 }
 
-.signIn, .signUp{
-box-sizing: border-box;
-margin: 5% auto 15% auto; 
-width: 80%;
-padding: 20px;
-font-size: 20px;
+.email,
+.password {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 5px 0px 22px 0px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.signIn,
+.signUp {
+  box-sizing: border-box;
+  margin: 5% auto 15% auto;
+  width: 80%;
+  padding: 20px;
+  font-size: 20px;
 }
 
 button {
-background-color: #04AA6D;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-opacity: 0.9;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
+
 button:hover {
-opacity:1;
+  opacity: 1;
 }
+
 .cancelButton {
-padding: 14px 20px;
-background-color: #f44336;
-}
-.cancelButton, .signUpButton {
-float: left;
-margin: 1%;
-width: 48%;
+  padding: 14px 20px;
+  background-color: #f44336;
 }
 
-.changeButton{
-width: 100px;
-margin-bottom: 5%;
-margin-left: 5%;
+.cancelButton,
+.signUpButton {
+  float: left;
+  margin: 1%;
+  width: 48%;
 }
 
-.message{
-background-color: white;
-margin-top: 0px;
-margin-right: 15px;
-padding: 10px;
-text-align: right;
+.changeButton {
+  width: 100px;
+  margin-bottom: 5%;
+  margin-left: 5%;
 }
-.inputMessage{
-border: 1px solid black;
-width: 80%;
-padding: 10px;
-float: left;
+
+.message {
+  background-color: white;
+  margin-top: 0px;
+  margin-right: 15px;
+  padding: 10px;
+  text-align: right;
 }
-.send{
-cursor: pointer;        
-border: 1px solid black;
-background: #f0f0f0;
-padding: 10px;
-padding-bottom: 8px;
-width: 13%;
-float: left;
-text-align: center;
+
+.inputMessage {
+  border: 1px solid black;
+  width: 80%;
+  padding: 10px;
+  float: left;
 }
-.send:hover{
-background: #d6d6d6;
+
+.send {
+  cursor: pointer;
+  border: 1px solid black;
+  background: #f0f0f0;
+  padding: 10px;
+  padding-bottom: 8px;
+  width: 13%;
+  float: left;
+  text-align: center;
 }
-.messageIn{
-background-color: white;
-margin-top: 10px;
-margin-right: 15px;
-padding: 10px;
+
+.send:hover {
+  background: #d6d6d6;
 }
+
+.messageIn {
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px;
+}
+
 #createListingForm {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
 }
 
 #createListingForm input[type="text"],
 #createListingForm textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 100%;
 }
 
 #createListingForm input[type="submit"] {
-    background-color:  #000;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 100%;
 }
+
 .upload-square {
-    width: 100px;
-    height: 100px;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-    margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  background-color: rgb(245, 245, 245);
+  color: black;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact .container form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+.contact .container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #393939;
+}
+
+.contact .container textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: black;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .container button {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .container button:hover {
+  background-color: transparent;
+  border-color: rgb(55, 55, 55);
+  color: rgb(55, 55, 55);
+}
+
+.confirmation-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.confirmation-message.hidden {
+  display: none;
+}
+
+.confirmation-message p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
 }
