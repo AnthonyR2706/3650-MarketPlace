@@ -204,19 +204,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementsByClassName('trash')[0].style.display = 'none';
     document.getElementsByClassName('trash')[1].style.display = 'none';
   }
-  
-  function newMessage() {
-          var li = document.createElement("li");
-          var inputValue = document.getElementById("inputMessage").value;
-          console.log(inputValue);
-          var t = document.createTextNode(inputValue); 
-          li.appendChild(t);
-          if (inputValue.replace(/\s/g, '').length) {
-            document.getElementById("myUL").appendChild(li);
-          }
-          document.getElementById("input").value = "";
-        }
-        var list = document.querySelector('ul');
+  document.getElementById('removeWish').onclick = function(){
+    document.getElementById('trashWish').style.display = 'none';
+  }
   })
 function validateForm() {
     var itemName = document.getElementById("NameofItem").value;
@@ -230,3 +220,16 @@ function validateForm() {
     }
     return true;
 }
+  
+function newMessage() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("inputMessage").value;
+  console.log(inputValue);
+  var t = document.createTextNode(inputValue); 
+  li.appendChild(t);
+  if (inputValue.replace(/\s/g, '').length) {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("input").value = "";
+}
+var list = document.querySelector('ul');
