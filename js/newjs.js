@@ -233,9 +233,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementsByClassName('trash')[0].style.display = 'none';
     document.getElementsByClassName('trash')[1].style.display = 'none';
   }
-  document.getElementById('removeWish').onclick = function () {
-    document.getElementById('trashWish').style.display = 'none';
-  }
 
 })
 function validateForm() {
