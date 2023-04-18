@@ -200,3 +200,19 @@ function turnOff(){
   infoPages[2].style.display = 'none';
   infoPages[3].style.display = 'none';
 }
+document.getElementById('removeListing').onclick = function(){
+  alert("Confirmation to remove listing has been sent to your email");
+}
+
+function newMessage() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("inputMessage").value;
+        console.log(inputValue);
+        var t = document.createTextNode(inputValue); 
+        li.appendChild(t);
+        if (inputValue.replace(/\s/g, '').length) {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("input").value = "";
+      }
+      var list = document.querySelector('ul');

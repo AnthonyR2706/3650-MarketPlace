@@ -171,3 +171,36 @@ width: 100px;
 margin-bottom: 5%;
 margin-left: 5%;
 }
+
+.message{
+background-color: white;
+margin-top: 0px;
+margin-right: 15px;
+padding: 10px;
+text-align: right;
+}
+.inputMessage{
+border: 1px solid black;
+width: 80%;
+padding: 10px;
+float: left;
+}
+.send{
+cursor: pointer;        
+border: 1px solid black;
+background: #f0f0f0;
+padding: 10px;
+padding-bottom: 8px;
+width: 13%;
+float: left;
+text-align: center;
+}
+.send:hover{
+background: #d6d6d6;
+}
+.messageIn{
+background-color: white;
+margin-top: 10px;
+margin-right: 15px;
+padding: 10px;
+}
