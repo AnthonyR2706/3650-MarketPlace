@@ -112,13 +112,16 @@
     </div>
   </div>
   <div class = "createlisting page">
-    <form id="createListingForm">
-      <h2>Create Listing</h2>
-      <input type="text" id="listingTitle" placeholder="Listing Title">
-      <input type="text" id="listingPrice" placeholder="Listing Price">
-      <textarea id="listingDescription" placeholder="Listing Description"></textarea>
-      <input type="submit" value="Create Listing">
-      </form>
+     <form id="createListingForm">
+        <h2>NEW LISTING</h2>
+        <div class="upload-square"></div> 
+         <input type="submit" value="Upload Picture">    
+         <input type="file" id="uploadPicture" name="uploadPicture" style="display:none;">
+         <input type="text" id="NameofItem" placeholder="Name of Item">
+        <input type="text" id="listingPrice" placeholder="Listing Price">
+        <textarea id="listingDescription" placeholder="Listing Description"></textarea>
+        <input type="submit" value="Create!">
+    </form>
   </div>
   <div class = "login page">
     <div class = "signIn">
