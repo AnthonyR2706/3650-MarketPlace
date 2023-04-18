@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   getChecked('textbooks');
   getChecked('electronics');
+  getChecked('biology');
+  getChecked('math');
+  getChecked('art');
+  getChecked('compSci');
   
   Array.prototype.forEach.call(allCheckboxes, function (el) {
     el.addEventListener('change', toggleCheckbox);
@@ -27,7 +31,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     allItems.map(function (el) {
       var electronics = checked.electronics.length ? _.intersection(Array.from(el.classList), checked.electronics).length : true;
       var textbooks = checked.textbooks.length ? _.intersection(Array.from(el.classList), checked.textbooks).length : true;
-      if (electronics && textbooks) {
+      var biology = checked.biology.length ? _.intersection(Array.from(el.classList), checked.biology).length : true;
+      var math = checked.math.length ? _.intersection(Array.from(el.classList), checked.math).length : true;
+      var art = checked.art.length ? _.intersection(Array.from(el.classList), checked.art).length : true;
+      var compSci = checked.compSci.length ? _.intersection(Array.from(el.classList), checked.compSci).length : true;
+      if (electronics && textbooks && biology && math && art && compSci) {
         el.style.display = '';
       } else {
         el.style.display = 'none';
@@ -193,7 +201,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     infoPages[3].style.display = 'none';
   }
   document.getElementById('removeListing').onclick = function(){
-    alert("Confirmation to remove listing has been sent to your email");
+    document.getElementsByClassName('trash')[0].style.display = 'none';
+    document.getElementsByClassName('trash')[1].style.display = 'none';
   }
   
   function newMessage() {

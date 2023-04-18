@@ -13,7 +13,6 @@
     <a class = "navBar current" href = "#" onClick = "javascript:changePage()" id = "home">Home</a>
     <a class = "navBar" href = "#" onClick = "javascript:changePage()" id = "myInfo">My Info</a>
     <a class = "navBar" href = "#" onClick = "javascript:changePage()" id = "createListing">Create Listing</a>
-    <input class = "search" type = "text" id = "input">
     <b class = "navBar logInButton" id = "logIn">Log In</b>
     <b class = "navBar logOutButton" id = "logOut">Log Out</b>
   </div>
@@ -22,11 +21,19 @@
       <h4>Filters</h4>
       <input type="checkbox" id="textbooks" name="textbooks" value="textbooks">
       <label for="textbooks">Textbooks</label><br>
+      <input type="checkbox" id="biology" name="biology" value="biologu">
+      <label for="biology">Biology</label><br>
+      <input type="checkbox" id="math" name="math" value="math">
+      <label for=math>Math</label><br>
       <input type="checkbox" id="electronics" name="electronics" value="electronics">
       <label for="electronics">Electronics</label><br>
+      <input type="checkbox" id="art" name="art" value="art">
+      <label for="art">Art</label><br>
+      <input type="checkbox" id="compSci" name="compSci" value="compSci">
+      <label for="compSci">Computer Science</label><br>
     </div>
    <div id="content">
-      <div class="item electronics">
+      <div class="item electronics compSci">
         <img src="https://i.ebayimg.com/images/g/gqMAAOSw1CNjW5R~/s-l500.jpg" alt="placeholder" class="item_pic">
       <div class="description">
         <p>Laptop <br></p>
@@ -44,7 +51,7 @@
         <a href="#contactseller">Contact Seller</a>
       </div>
       </div>
-     <div class="item electronics">
+     <div class="item electronics math trash">
         <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
       <div class="description">
         <p>Calculator <br></p>
@@ -76,7 +83,7 @@
      <button type = "button" class = "changeButton" id = "changeButton3">Edit</button>
    </div>
     <div class = "yourListings infoPage">
-      <div class="item">
+      <div class="item trash">
         <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
       <div class="description">
         <p>Calculator <br></p>
