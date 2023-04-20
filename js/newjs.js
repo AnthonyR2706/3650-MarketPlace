@@ -85,8 +85,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const contactSeller = document.querySelectorAll(".contactSeller");
+  
+  contactSeller.forEach((btn) => {
+    btn.addEventListener("click", contact);
+  });
 
-  document.getElementById('contact').onclick = function () {
+  function contact() {
     if (cur != 5) {
       pages[cur].style.display = 'none';
       cur = 5;
