@@ -84,8 +84,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
       console.log(navBarElements[cur]);
     }
   }
-  
-  document.getElementById('contact').onclick = function () {
+  const contactSeller = document.querySelectorAll(".contactSeller");
+
+  submit.forEach((btn) => {
+    btn.addEventListener("click", contact);
+  });
+
+  function contact() {
     if (cur != 5) {
       pages[cur].style.display = 'none';
       cur = 5;
