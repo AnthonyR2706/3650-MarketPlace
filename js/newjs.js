@@ -86,11 +86,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   const contactSeller = document.querySelectorAll(".contactSeller");
 
-  submit.forEach((btn) => {
-    btn.addEventListener("click", contact);
-  });
-
-  function contact() {
+  document.getElementById('contact').onclick = function () {
     if (cur != 5) {
       pages[cur].style.display = 'none';
       cur = 5;
