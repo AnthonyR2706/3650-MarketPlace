@@ -48,9 +48,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   const pages = document.getElementsByClassName("page");
 
-  function changePage() {
-    console.log("test");
-  }
   function loginPage() {
     console.log("test");
   }
@@ -98,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function contact() {
     if (cur != 5) {
+      navBarElements[cur].classList.toggle('current');
       pages[cur].style.display = 'none';
       cur = 5;
       pages[cur].style.display = '';

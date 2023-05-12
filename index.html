@@ -12,9 +12,9 @@
 <body>
   
   <div class="topNavBar">
-    <a class="navBar current" href="#" onClick="javascript:changePage()" id="home">Home</a>
-    <a class="navBar" href="#" onClick="javascript:changePage()" id="myInfo">My Info</a>
-    <a class="navBar" href="#" onClick="javascript:changePage()" id="createListing">Create Listing</a>
+    <a class="navBar current" href="#" id="home">Home</a>
+    <a class="navBar" href="#" id="myInfo">My Info</a>
+    <a class="navBar" href="#" id="createListing">Create Listing</a>
     <b class="navBar logInButton" id="logIn">Log In</b>
     <b class="navBar logOutButton" id="logOut">Log Out</b>
   </div>
@@ -24,12 +24,12 @@
       <h4>Filters</h4>
       <input type="checkbox" id="textbooks" name="textbooks" value="textbooks">
       <label for="textbooks">Textbooks</label><br>
+      <input type="checkbox" id="electronics" name="electronics" value="electronics">
+      <label for="electronics">Electronics</label><br>
       <input type="checkbox" id="biology" name="biology" value="biologu">
       <label for="biology">Biology</label><br>
       <input type="checkbox" id="math" name="math" value="math">
       <label for=math>Math</label><br>
-      <input type="checkbox" id="electronics" name="electronics" value="electronics">
-      <label for="electronics">Electronics</label><br>
       <input type="checkbox" id="art" name="art" value="art">
       <label for="art">Art</label><br>
       <input type="checkbox" id="compSci" name="compSci" value="compSci">
@@ -39,32 +39,32 @@
       <div class="item electronics compSci">
         <img src="https://i.ebayimg.com/images/g/gqMAAOSw1CNjW5R~/s-l500.jpg" alt="placeholder" class="item_pic">
         <div class="description">
-          <p>Laptop <br></p>
+          <p>Dell Latitude 7480 I7 7600u 2.80ghz / 8gb / 256gb Ssd 8118 <br></p>
           <p>$100 <br></p>
           <p>Seller: xyz <br></p>
           <a href="#Wishlist">WishList</a>
-          <a href="#" class = 'contactSeller' onClick="javascript:changePage()" id="contact">Contact Seller</a>
+          <a href="#" class = 'contactSeller' id="contact">Contact Seller</a>
         </div>
       </div>
       <div class="item textbooks">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/English_textbook.jpg" alt="placeholder"
           class="item_pic">
         <div class="description">
-          <p>Textbook <br></p>
+          <p>Textbook - English Through Practice <br></p>
           <p>$50 <br></p>
           <p>Seller: abc <br></p>
           <a href="#Wishlist">WishList</a>
-          <a href="#" class = 'contactSeller' onClick="javascript:changePage()" id="contact">Contact Seller</a>
+          <a href="#" class = 'contactSeller' id="contact">Contact Seller</a>
         </div>
       </div>
       <div class="item electronics math trash">
         <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
         <div class="description">
-          <p>Calculator <br></p>
+          <p>Ti-83 Calculator <br></p>
           <p>$120 <br></p>
           <p>Seller: JohnDoe123 <br></p>
           <a href="#Wishlist">WishList</a>
-          <a href="#" class = 'contactSeller' onClick="javascript:changePage()" id="contact">Contact Seller</a>
+          <a href="#" class = 'contactSeller' id="contact">Contact Seller</a>
         </div>
       </div>
 
@@ -90,21 +90,21 @@
       <button type="button" class="changeButton" id="changeButton3">Edit</button>
     </div>
     <div class="yourListings infoPage">
-      <div class="item trash">
+      <div class="wishlistItem trash">
         <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
         <div class="description">
-          <p>Calculator <br></p>
+          <p>Ti-83 Calculator <br></p>
           <p>$100 <br></p>
           <a href="#" id='removeListing'>Remove Listing</a>
         </div>
       </div>
     </div>
     <div class="wishlist infoPage">
-      <div class="item" id="trashWish">
+      <div class="wishlistItem" id="trashWish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/English_textbook.jpg" alt="placeholder"
           class="item_pic">
         <div class="description">
-          <p>Textbook <br></p>
+          <p>English Through Practice <br></p>
           <p>$50 <br></p>
           <p>Seller: abc <br></p>
           <a href="#">Contact Seller</a>
@@ -140,14 +140,16 @@
       <input type="text" id="listingPrice" placeholder="Listing Price" required>
       <textarea id="listingDescription" placeholder="Listing Description" required></textarea>
       <h4>Check all that apply:</h4>
-      <input type="checkbox" id="Biology" name="Biology" value="Biology">
-      <label for="Biology">Biology</label><br>
+      <input type="checkbox" id="Textbook" name="Textbook" value="Textbook">
+      <label for="textbook">Textbook</label><br>
       <input type="checkbox" id="Electronics" name="Electronics" value="Electronics">
-      <label for="Electronics">Electronics</label><br>
+      <label for="electronics">Electronics</label><br>
+      <input type="checkbox" id="Biology" name="Biology" value="Biology">
+      <label for="biology">Biology</label><br>
       <input type="checkbox" id="Math" name="Math" value="Math">
-      <label for="Math">Math</label><br>
+      <label for="math">Math</label><br>
       <input type="checkbox" id="ArtSupplies" name="Art Supplies" value="Art Supplies">
-      <label for="ArtSupplies">Art Supplies</label><br>
+      <label for="art">Art</label><br>
       <input type="checkbox" id="ComputerScience" name="Computer Science" value="Computer Science">
       <label for="ComputerScience">Computer Science</label><br>
       <input type="submit" value="Create!" onclick="return validateForm()">
