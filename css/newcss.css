@@ -82,10 +82,6 @@ body {
   display: flex;
   border-bottom: solid 2px black;
 }
-.wishlistItem {
-  display: flex;
-  border-bottom: solid 2px black;
-}
 
 .description {
   display: block;
@@ -266,6 +262,101 @@ button:hover {
   background-color: #FFFFFF;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  background-color: rgb(245, 245, 245);
+  color: black;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact .container form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+.contact .container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #393939;
+}
+
+.contact .container textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: black;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .container button {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(55, 55, 55);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .container button:hover {
+  background-color: transparent;
+  border-color: rgb(55, 55, 55);
+  color: rgb(55, 55, 55);
+}
+
+.confirmation-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.confirmation-message.hidden {
+  display: none;
+}
+
+.confirmation-message p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
 }
 
 
