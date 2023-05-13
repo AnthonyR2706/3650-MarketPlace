@@ -77,17 +77,17 @@
       <h>
         Username: JohnDoe123
       </h>
-      <button type="button" class="changeButton" id="changeButton1">Edit</button>
+      <button type="button" class="changeButton" id="changeButton1" onclick="showPopup()">Edit</button>
       <br>
       <h>
         Password: **********
       </h>
-      <button type="button" class="changeButton" id="changeButton2">Edit</button>
+      <button type="button" class="changeButton" id="changeButton2" onclick="showPopup()">Edit</button>
       <br>
       <h>
         Email: JohnDoe123@gmail.com
       </h>
-      <button type="button" class="changeButton" id="changeButton3">Edit</button>
+      <button type="button" class="changeButton" id="changeButton3" onclick="showPopup()">Edit</button>
     </div>
     <div class="yourListings infoPage">
       <div class="wishlistItem trash">
@@ -203,7 +203,11 @@
       <p>Your message has been sent!</p>
     </div>
   </div>
-
+<div id="popup" style="display: none;">
+  <div class="popup-content">
+    <h2>You have been sent an email allowing you to change your username</h2>
+    <button onclick="hidePopup()">Close</button>
+  </div>
   <script src="js/newjs.js" charset="utf-8"> </script>
 </body>
 
