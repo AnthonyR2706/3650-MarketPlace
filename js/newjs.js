@@ -268,4 +268,8 @@ function showPopup(message) {
 function hidePopup() {
     document.getElementById('popup').style.display = 'none';
 }
-
+window.onclick = function(event) {
+  if (event.target == document.getElementById("popup")) {
+    event.stopPropagation();
+  }
+}
