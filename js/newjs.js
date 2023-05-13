@@ -260,10 +260,12 @@ function newMessage() {
   document.getElementById("input").value = "";
 }
 var list = document.querySelector('ul');
-function showPopup() {
+function showPopup(message) {
+    document.getElementById("popupMessage").innerText = message;
+
     document.getElementById('popup').style.display = 'block';
 }
-
 function hidePopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
