@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('home').onclick = function () {
     if (cur != 0) {
+      hidePopup();
       this.classList.toggle('current');
       if(cur != 5){
         navBarElements[cur].classList.toggle('current');
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('myInfo').onclick = function () {
     if (cur != 1) {
+      hidePopup();
       this.classList.toggle('current');
       if(cur != 5){
         navBarElements[cur].classList.toggle('current');
@@ -77,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('createListing').onclick = function () {
     if (cur != 2) {
+      hidePopup();
       this.classList.toggle('current');
       if(cur != 5){
         navBarElements[cur].classList.toggle('current');
@@ -95,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function contact() {
     if (cur != 5) {
+      hidePopup();
       navBarElements[cur].classList.toggle('current');
       pages[cur].style.display = 'none';
       cur = 5;
@@ -110,12 +114,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   form__.addEventListener('submit', (event) => {
     event.preventDefault(); // prevent the form from submitting normally
     // show the confirmation message
-    alert('your message has been sent');
+
     // redirect to the Home.html page after 3 seconds
 
     if (cur != 0) {
+      hidePopup();
       pages[cur].style.display = 'none';
       cur = 0;
+      navBarElements[cur].classList.toggle('current');
       pages[cur].style.display = '';
     }
   });
@@ -125,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const infoPages = document.getElementsByClassName("infoPage");
   document.getElementById('accountSettings').onclick = function () {
     if (curAccount != 0) {
+      hidePopup();
       this.classList.toggle('current'); sideNavBarElements[curAccount].classList.toggle('current');
       infoPages[curAccount].style.display = 'none';
       curAccount = 0;
@@ -134,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('yourListings').onclick = function () {
     if (curAccount != 1) {
+      hidePopup();
       this.classList.toggle('current'); sideNavBarElements[curAccount].classList.toggle('current');
       infoPages[curAccount].style.display = 'none';
       curAccount = 1;
@@ -143,6 +151,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('wishlist').onclick = function () {
     if (curAccount != 2) {
+      hidePopup();
       this.classList.toggle('current'); sideNavBarElements[curAccount].classList.toggle('current');
       infoPages[curAccount].style.display = 'none';
       curAccount = 2;
@@ -152,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   document.getElementById('inbox').onclick = function () {
     if (curAccount != 3) {
+      hidePopup();
       this.classList.toggle('current');
       sideNavBarElements[curAccount].classList.toggle('current');
       infoPages[curAccount].style.display = 'none';
@@ -160,25 +170,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
       console.log(sideNavBarElements[curAccount]);
     }
   }
-  document.getElementById('changeButton1').onclick = function () {
-    alert("You have been sent an email allowing you to change your username");
-  }
-  document.getElementById('changeButton2').onclick = function () {
-    alert("You have been sent an email allowing you to change your password");
-  }
-  document.getElementById('changeButton3').onclick = function () {
-    alert("You have been sent an email allowing you to change your email");
-  }
-
+ 
 
   let loggedIn = false;
   document.getElementById('logIn').onclick = function () {
     console.log("login Button");
+    hidePopup();
     pages[cur].style.display = 'none';
     document.getElementsByClassName('topNavBar')[0].style.display = 'none';
     document.getElementsByClassName('login')[0].style.display = '';
   }
   document.getElementById('signIn').onclick = function () {
+    hidePopup();
     loggedIn = true;
     pages[cur].style.display = '';
     document.getElementsByClassName('topNavBar')[0].style.display = '';
@@ -187,32 +190,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('logIn').style.display = 'none';
   }
   document.getElementById('cancel').onclick = function () {
+    hidePopup();
     pages[cur].style.display = '';
     document.getElementsByClassName('topNavBar')[0].style.display = '';
     document.getElementsByClassName('login')[0].style.display = 'none';
   }
 
   document.getElementById('haveAccount').onclick = function () {
+    hidePopup();
     document.getElementsByClassName('login')[0].style.display = 'none';
     document.getElementsByClassName('signUpPage')[0].style.display = '';
   }
 
-  document.getElementById('forgotPassword').onclick = function () {
-    alert("Recovery email sent");
-  }
-
   document.getElementById('signInButton').onclick = function () {
+    hidePopup();
     document.getElementsByClassName('login')[0].style.display = '';
     document.getElementsByClassName('signUpPage')[0].style.display = 'none';
   }
 
   document.getElementById('logOut').onclick = function () {
+    hidePopup();
     loggedIn = true;
     document.getElementById('logOut').style.display = 'none';
     document.getElementById('logIn').style.display = '';
   }
 
   document.getElementById('signIn2').onclick = function () {
+    hidePopup();
     loggedIn = true;
     pages[cur].style.display = '';
     document.getElementsByClassName('topNavBar')[0].style.display = '';
@@ -221,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('logIn').style.display = 'none';
   }
   document.getElementById('cancel2').onclick = function () {
+    hidePopup();
     pages[cur].style.display = '';
     document.getElementsByClassName('topNavBar')[0].style.display = '';
     document.getElementsByClassName('signUpPage')[0].style.display = 'none';
@@ -251,7 +256,6 @@ function validateForm() {
   var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
   if (itemName === "" || listingPrice === "" || listingDescription === "" || checkboxes.length === 0) {
-    alert("Please fill out all the information and check at least one box.");
     return false;
   }
   return true;
@@ -269,3 +273,11 @@ function newMessage() {
   document.getElementById("input").value = "";
 }
 var list = document.querySelector('ul');
+function showPopup(message) {
+    document.getElementById("popupMessage").innerText = message;
+
+    document.getElementById('popup').style.display = 'block';
+}
+function hidePopup() {
+  document.getElementById('popup').style.display = 'none';
+}

@@ -13,7 +13,7 @@
   
   <div class="topNavBar">
     <a class="navBar current" href="#" id="home">Home</a>
-    <a class="navBar" href="#" id="myInfo">My Info</a>
+    <a class="navBar" href="#" id="myInfo">Profile</a>
     <a class="navBar" href="#" id="createListing">Create Listing</a>
     <b class="navBar logInButton" id="logIn">Log In</b>
     <b class="navBar logOutButton" id="logOut">Log Out</b>
@@ -77,17 +77,17 @@
       <h>
         Username: JohnDoe123
       </h>
-      <button type="button" class="changeButton" id="changeButton1">Edit</button>
+      <button type="button" class="changeButton" onclick="showPopup('You have been sent an email allowing you to change your username')">Edit</button>
       <br>
       <h>
         Password: **********
       </h>
-      <button type="button" class="changeButton" id="changeButton2">Edit</button>
+      <button type="button" class="changeButton" onclick="showPopup('You have been sent an email allowing you to change your password')">Edit</button>
       <br>
       <h>
         Email: JohnDoe123@gmail.com
       </h>
-      <button type="button" class="changeButton" id="changeButton3">Edit</button>
+      <button type="button" class="changeButton" onclick="showPopup('You have been sent an email allowing you to change your email')">Edit</button>
     </div>
     <div class="yourListings infoPage">
       <div class="wishlistItem trash">
@@ -107,7 +107,7 @@
           <p>English Through Practice <br></p>
           <p>$50 <br></p>
           <p>Seller: abc <br></p>
-          <a href="#">Contact Seller</a>
+          <a href="#" class = 'contactSeller' id="contact">Contact Seller</a>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
       <label for="art">Art</label><br>
       <input type="checkbox" id="ComputerScience" name="Computer Science" value="Computer Science">
       <label for="ComputerScience">Computer Science</label><br>
-      <input type="submit" value="Create!" onclick="return validateForm()">
+      <input type="submit" value="Create!" class="changeButton" onclick="showPopup('Please fill out all the information and check at least one box')">
     </form>
   </div>
 
@@ -168,7 +168,7 @@
         </div>
         <a class="haveAccount" href="#" id="haveAccount">Don't have an account? Sign up</a>
         <br>
-        <a class="forgotPassword" href="#" onClick="javascript:forgotPassword()" id="forgotPassword">Forgot Password</a>
+        <a class="forgotPassword" href="#" class="changeButton" onclick="showPopup('You have been sent a recovery email')" id="forgotPassword">Forgot Password</a>
       </center>
     </div>
   </div>
@@ -194,16 +194,17 @@
         <form>
           <label for="message">Enter your message:</label>
           <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" onclick="showPopup('Your message has been sent')" >Send</button>
         </form>
       </div>
     </div>
 
-    <div class="confirmation-message hidden">
-      <p>Your message has been sent!</p>
-    </div>
   </div>
-
+<div id="popup" style="display: none;">
+  <div class="popup-content">
+    <h2 id="popupMessage"></h2>
+    <button onclick="hidePopup()">Close</button>
+  </div>
   <script src="js/newjs.js" charset="utf-8"> </script>
 </body>
 
