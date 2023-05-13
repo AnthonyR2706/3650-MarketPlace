@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   document.getElementById('forgotPassword').onclick = function () {
-    alert("Recovery email sent");
+     showPopup("Recovery email sent");
   }
 
   document.getElementById('signInButton').onclick = function () {
