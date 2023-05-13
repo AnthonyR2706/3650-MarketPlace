@@ -72,23 +72,28 @@
   </div>
 
 
-  <div class="myInfo page">
-    <div class="accountSettings infoPage">
-      <h>
-        Username: JohnDoe123
-      </h>
-      <button type="button" class="changeButton" onclick="showPopup()">Edit</button>
-      <br>
-      <h>
-        Password: **********
-      </h>
-      <button type="button" class="changeButton" onclick="showPopup()">Edit</button>
-      <br>
-      <h>
-        Email: JohnDoe123@gmail.com
-      </h>
-      <button type="button" class="changeButton" onclick="showPopup()">Edit</button>
-    </div>
+ <div class="myInfo page">
+            <div class="accountSettings infoPage">
+                <h>Username: JohnDoe123</h>
+                <button type="button" class="changeButton" id="changeButton1" onclick="showPopup('You have been sent an email allowing you to change your username')">Edit</button>
+
+                <br>
+                <h>Password: **********</h>
+                <button type="button" class="changeButton" id="changeButton2" onclick="showPopup('You have been sent an email allowing you to change your password')">Edit</button>
+                <br>
+                <h>Email: JohnDoe123@gmail.com</h>
+                <button type="button" class="changeButton" id="changeButton3" onclick="showPopup('You have been sent an email allowing you to change your email')">Edit</button>
+            </div>
+            <div class="yourListings infoPage">
+                <div class="wishlistItem trash">
+                    <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
+                    <div class="description">
+                        <p>Ti-83 Calculator <br></p>
+                        <p>$100 <br></p>
+                        <a href="#" id='removeListing'>Remove Listing</a>
+                    </div>
+                </div>
+            </div>
     <div class="yourListings infoPage">
       <div class="wishlistItem trash">
         <img src="https://i.ebayimg.com/images/g/G8IAAOSwekdg5qKG/s-l500.jpg" alt="placeholder" class="item_pic">
@@ -202,12 +207,13 @@
     <div class="confirmation-message hidden">
       <p>Your message has been sent!</p>
     </div>
-  </div>
-<div id="popup" style="display: none;">
-  <div class="popup-content">
-    <h2>You have been sent an email allowing you to change</h2>
-    <button onclick="hidePopup()">Close</button>
-  </div>
+         </div>
+        <div id="popup" style="display: none;">
+            <div class="popup-content">
+                <h2 id="popupMessage"></h2>
+                <button onclick="hidePopup()">Close</button>
+            </div>
+        </div>
   <script src="js/newjs.js" charset="utf-8"> </script>
 </body>
 
