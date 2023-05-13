@@ -160,16 +160,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       console.log(sideNavBarElements[curAccount]);
     }
   }
-  document.getElementById('changeButton1').onclick = function () {
-    alert("You have been sent an email allowing you to change your username");
-  }
-  document.getElementById('changeButton2').onclick = function () {
-    alert("You have been sent an email allowing you to change your password");
-  }
-  document.getElementById('changeButton3').onclick = function () {
-    alert("You have been sent an email allowing you to change your email");
-  }
-
+ 
 
   let loggedIn = false;
   document.getElementById('logIn').onclick = function () {
