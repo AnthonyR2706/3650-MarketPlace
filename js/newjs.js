@@ -242,9 +242,9 @@ function validateForm() {
   var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
   if (itemName === "" || listingPrice === "" || listingDescription === "" || checkboxes.length === 0) {
-    alert("Please fill out all the information and check at least one box.");
-    return false;
-  }
+        showPopup("Please fill out all the information and check at least one box.");
+        return false;
+    }
   return true;
 }
 
