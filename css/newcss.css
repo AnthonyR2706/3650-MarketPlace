@@ -221,6 +221,12 @@ button:hover {
   float: left;
 }
 
+.myInfo h2{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .send {
   cursor: pointer;
   border: 1px solid black;
