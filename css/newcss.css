@@ -1,4 +1,5 @@
 :root {
+  font-size: larger;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -19,6 +20,7 @@ body {
   text-align: center;
   padding: 15px 35px;
   text-decoration: none;
+  font-size: larger;
 }
 
 .topNavBar b {
@@ -61,6 +63,10 @@ body {
   width: 15%;
   border: solid 1px rgba(255, 0, 0, 0.1);
   background-color: rgba(255, 0, 0, 0.1);
+}
+
+#filter h4{
+  letter-spacing: 2rem;
 }
 
 #content {
@@ -271,6 +277,10 @@ button:hover {
 
 * {
   box-sizing: border-box;
+}
+
+.contactSeller{
+  margin-top: 1rem;
 }
 
 .contact {
